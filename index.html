@@ -15,17 +15,23 @@
   <!-- ============ CABEÇALHO ============ -->
   <header class="hero">
     <div class="wrap">
+      <!-- Seletor de idioma -->
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
       <!-- Quando tiver o logo, troque o h1 por: <img src="logo/logo.png" alt="Galactic Overstrike"> -->
       <h1>Galactic Overstrike</h1>
-      <p class="pitch">Torne-se o campeão da arena.</p>
+      <p class="pitch" data-i18n="pitch">Torne-se o campeão da arena.</p>
       <nav class="toc" aria-label="Seções">
-        <a href="#factsheet">Fact sheet</a>
-        <a href="#descricao">Descrição</a>
-        <a href="#trailer">Trailer</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#logos">Logos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+        <a href="#factsheet" data-i18n="navFacts">Fact sheet</a>
+        <a href="#descricao" data-i18n="navDesc">Descrição</a>
+        <a href="#trailer" data-i18n="navTrailer">Trailer</a>
+        <a href="#screenshots" data-i18n="navShots">Screenshots</a>
+        <a href="#logos" data-i18n="navLogos">Logos</a>
+        <a href="#sobre" data-i18n="navAbout">Sobre</a>
+        <a href="#contato" data-i18n="navContact">Contato</a>
       </nav>
     </div>
   </header>
@@ -34,19 +40,19 @@
 
     <!-- ============ FACT SHEET ============ -->
     <section id="factsheet">
-      <h2>Fact sheet</h2>
+      <h2 data-i18n="navFacts">Fact sheet</h2>
       <dl class="facts">
-        <dt>Desenvolvedor</dt>
-        <dd>lucasananin (desenvolvedor solo)</dd>
-        <dt>Plataformas</dt>
-        <dd>Windows e Web</dd>
-        <dt>Gênero</dt>
+        <dt data-i18n="factDev">Desenvolvedor</dt>
+        <dd data-i18n="factDevVal">lucasananin (desenvolvedor solo)</dd>
+        <dt data-i18n="factPlatforms">Plataformas</dt>
+        <dd data-i18n="factPlatformsVal">Windows e Web</dd>
+        <dt data-i18n="factGenre">Gênero</dt>
         <dd>Top-down shooter</dd>
-        <dt>Preço</dt>
-        <dd>Gratuito</dd>
-        <dt>Idioma</dt>
-        <dd>Inglês</dd>
-        <dt>Disponível em</dt>
+        <dt data-i18n="factPrice">Preço</dt>
+        <dd data-i18n="factPriceVal">Gratuito</dd>
+        <dt data-i18n="factLang">Idioma</dt>
+        <dd data-i18n="factLangVal">Inglês</dd>
+        <dt data-i18n="factAvail">Disponível em</dt>
         <dd><a href="https://lucasananin.itch.io/galactic-overstrike" target="_blank"
             rel="noopener noreferrer">itch.io</a></dd>
       </dl>
@@ -54,95 +60,95 @@
 
     <!-- ============ DESCRIÇÃO ============ -->
     <section id="descricao">
-      <h2>Descrição</h2>
-      <p>Galactic Overstrike é um jogo de tiro de arena top-down, ambientado em uma galáxia alienígena distante.
+      <h2 data-i18n="navDesc">Descrição</h2>
+      <p data-i18n="desc">Galactic Overstrike é um jogo de tiro de arena top-down, ambientado em uma galáxia alienígena
+        distante.
         Pulverize seus inimigos com um enorme arsenal de armas, incluindo metralhadoras, rifles de plasma e lançadores
         de foguetes. Torne-se o campeão da arena ou acabe como mais uma mancha de sangue no chão.</p>
 
-      <h3>Principais características</h3>
+      <h3 data-i18n="features">Principais características</h3>
       <ul>
-        <li>Estilo artístico único.</li>
-        <li>Mais de 20 armas: metralhadoras, rifles de plasma, lançadores de foguetes e muito mais.</li>
-        <li>9 tipos de inimigos, cada um com seu próprio comportamento. Adapte suas táticas!</li>
-        <li>Luta contra chefe: enfrente o desafio supremo da arena.</li>
+        <li data-i18n="feat1">Estilo artístico único.</li>
+        <li data-i18n="feat2">Mais de 20 armas: metralhadoras, rifles de plasma, lançadores de foguetes e muito mais.
+        </li>
+        <li data-i18n="feat3">9 tipos de inimigos, cada um com seu próprio comportamento. Adapte suas táticas!</li>
+        <li data-i18n="feat4">Luta contra chefe: enfrente o desafio supremo da arena.</li>
       </ul>
     </section>
 
     <!-- ============ TRAILER ============ -->
     <section id="trailer">
-      <h2>Trailer</h2>
-      <a class="video" href="https://www.youtube.com/watch?v=udCdf-i638o"
+      <h2 data-i18n="navTrailer">Trailer</h2>
+      <a class="video" href="https://www.youtube.com/watch?v=udCdf-i638o" data-i18n-aria="trailerLabel"
         aria-label="Assistir ao trailer de Galactic Overstrike no YouTube" target="_blank" rel="noopener noreferrer">
         <img src="https://img.youtube.com/vi/udCdf-i638o/maxresdefault.jpg"
           onerror="this.onerror=null;this.src='https://img.youtube.com/vi/udCdf-i638o/hqdefault.jpg'"
-          alt="Trailer de Galactic Overstrike" loading="lazy">
+          data-i18n-alt="trailerAlt" alt="Trailer de Galactic Overstrike" loading="lazy">
         <span class="play" aria-hidden="true"></span>
       </a>
     </section>
 
     <!-- ============ SCREENSHOTS ============ -->
     <section id="screenshots">
-      <h2>Screenshots</h2>
-      <p class="note">Clique em uma imagem para ampliar. <a href="images.zip" download>Baixar todas
-          (.zip)</a></p>
+      <h2 data-i18n="navShots">Screenshots</h2>
+      <p class="note"><span data-i18n="shotsNote">Clique em uma imagem para ampliar.</span>
+        <a href="images.zip" download data-i18n="shotsZip">Baixar todas (.zip)</a>
+      </p>
       <div class="gallery">
-        <!-- Copie e cole um <a> por imagem -->
-        <a href="screenshots/01.gif"><img src="screenshots/01.gif" alt="Screenshot 1 de Galactic Overstrike"
-            loading="lazy"></a>
-        <a href="screenshots/02.gif"><img src="screenshots/02.gif" alt="Screenshot 2 de Galactic Overstrike"
-            loading="lazy"></a>
-        <a href="screenshots/03.gif"><img src="screenshots/03.gif" alt="Screenshot 3 de Galactic Overstrike"
-            loading="lazy"></a>
-        <a href="screenshots/04.jpg"><img src="screenshots/04.jpg" alt="Screenshot 4 de Galactic Overstrike"
-            loading="lazy"></a>
-        <a href="screenshots/05.jpg"><img src="screenshots/05.jpg" alt="Screenshot 5 de Galactic Overstrike"
-            loading="lazy"></a>
-        <a href="screenshots/06.jpg"><img src="screenshots/06.jpg" alt="Screenshot 6 de Galactic Overstrike"
-            loading="lazy"></a>
+        <!-- Copie e cole um <a> por imagem (o texto alternativo é numerado automaticamente) -->
+        <a href="screenshots/01.gif"><img src="screenshots/01.gif" data-shot alt="" loading="lazy"></a>
+        <a href="screenshots/02.gif"><img src="screenshots/02.gif" data-shot alt="" loading="lazy"></a>
+        <a href="screenshots/03.gif"><img src="screenshots/03.gif" data-shot alt="" loading="lazy"></a>
+        <a href="screenshots/04.jpg"><img src="screenshots/04.jpg" data-shot alt="" loading="lazy"></a>
+        <a href="screenshots/05.jpg"><img src="screenshots/05.jpg" data-shot alt="" loading="lazy"></a>
+        <a href="screenshots/06.jpg"><img src="screenshots/06.jpg" data-shot alt="" loading="lazy"></a>
       </div>
     </section>
 
     <!-- ============ LOGOS ============ -->
     <section id="logos">
-      <h2>Logo e ícone</h2>
+      <h2 data-i18n="logosTitle">Logo e ícone</h2>
       <div class="logos">
         <figure>
-          <div class="logo-box"><img src="logo/Cover_HD.jpg" alt="Logo de Galactic Overstrike"></div>
-          <figcaption>Logo · <a href="logo/Cover_HD.jpg" download>PNG</a>
-            <!-- <figcaption>Logo · <a href="logo/Cover_HD.jpg" download>PNG</a> · <a href="logo/logo.svg" download>SVG</a></figcaption> -->
+          <div class="logo-box"><img src="logo/Cover_HD.jpg" data-i18n-alt="logoAlt" alt="Logo de Galactic Overstrike">
+          </div>
+          <figcaption><span data-i18n="logo">Logo</span> · <a href="logo/Cover_HD.jpg" download>JPG</a></figcaption>
+          <!-- Com SVG: <a href="logo/logo.svg" download>SVG</a> -->
         </figure>
         <figure>
-          <div class="logo-box"><img src="logo/Logo_1.png" alt="Ícone de Galactic Overstrike"></div>
-          <figcaption>Ícone · <a href="logo/Logo_1.png" download>PNG</a></figcaption>
+          <div class="logo-box"><img src="logo/Logo_1.png" data-i18n-alt="iconAlt" alt="Ícone de Galactic Overstrike">
+          </div>
+          <figcaption><span data-i18n="icon">Ícone</span> · <a href="logo/Logo_1.png" download>PNG</a></figcaption>
         </figure>
         <figure>
-          <div class="logo-box"><img src="logo/Logo_2.png" alt="Ícone de Galactic Overstrike"></div>
-          <figcaption>Ícone · <a href="logo/Logo_2.png" download>PNG</a></figcaption>
+          <div class="logo-box"><img src="logo/Logo_2.png" data-i18n-alt="iconAlt" alt="Ícone de Galactic Overstrike">
+          </div>
+          <figcaption><span data-i18n="icon">Ícone</span> · <a href="logo/Logo_2.png" download>PNG</a></figcaption>
         </figure>
       </div>
     </section>
 
     <!-- ============ SOBRE ============ -->
     <section id="sobre">
-      <h2>Sobre o desenvolvedor</h2>
-      <p>Galactic Overstrike é desenvolvido por lucasananin, desenvolvedor solo.</p>
+      <h2 data-i18n="aboutTitle">Sobre o desenvolvedor</h2>
+      <p data-i18n="about">Galactic Overstrike é desenvolvido por lucasananin, desenvolvedor solo.</p>
 
-      <h3>Créditos</h3>
+      <h3 data-i18n="credits">Créditos</h3>
       <ul>
-        <li>lucasananin – Desenvolvedor solo</li>
+        <li data-i18n="creditsItem">lucasananin – Desenvolvedor solo</li>
       </ul>
     </section>
 
     <!-- ============ CONTATO ============ -->
     <section id="contato">
-      <h2>Contato</h2>
+      <h2 data-i18n="navContact">Contato</h2>
       <p>
         <a id="email" href="mailto:lucasfagundes.gweb@gmail.com">lucasfagundes.gweb@gmail.com</a>
-        <button type="button" id="copy-email">Copiar e-mail</button>
+        <button type="button" id="copy-email" data-i18n="copyEmail">Copiar e-mail</button>
         <span id="copy-status" role="status"></span>
       </p>
       <ul class="links">
-        <li><a href="https://x.com/lucasananin" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="https://x.com/lucasananin" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
         <li><a href="https://www.instagram.com/lucasananin/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </li>
         <li><a href="https://www.youtube.com/@lucasbernard971" target="_blank" rel="noopener noreferrer">YouTube</a>
@@ -157,14 +163,16 @@
   </main>
 
   <footer class="wrap">
-    <p>© <span id="year"></span> lucasananin. O material deste press kit pode ser usado livremente para divulgação do
-      jogo.</p>
+    <p>© <span id="year"></span> lucasananin. <span data-i18n="footer">O material deste press kit pode ser usado
+        livremente para divulgação do
+        jogo.</span></p>
   </footer>
 
   <!-- Ampliação das screenshots -->
-  <dialog id="lightbox" aria-label="Imagem ampliada">
+  <dialog id="lightbox" data-i18n-aria="lightboxLabel" aria-label="Imagem ampliada">
     <img src="" alt="">
-    <button type="button" id="close-lightbox" aria-label="Fechar">Fechar</button>
+    <button type="button" id="close-lightbox" data-i18n="close" data-i18n-aria="close"
+      aria-label="Fechar">Fechar</button>
   </dialog>
 
   <script src="script.js"></script>
